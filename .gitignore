@@ -1,3 +1,4 @@
 *.d
 *.o
+version.h
 sxiv
