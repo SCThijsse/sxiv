@@ -5,6 +5,7 @@ VPATH = $(srcdir)
 
 PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
+SHAREPREFIX = /usr/share
 
 # autoreload backend: inotify/nop
 AUTORELOAD = inotify
@@ -76,6 +77,8 @@ install: all
 	mkdir -p $(DESTDIR)$(PREFIX)/share/sxiv/exec
 	cp exec/* $(DESTDIR)$(PREFIX)/share/sxiv/exec/
 	chmod 755 $(DESTDIR)$(PREFIX)/share/sxiv/exec/*
+	@echo "INSTALL /usr/share/application/sxiv.desktop"
+	cp sxiv.desktop ${DESTDIR}${SHAREPREFIX}/applications/
 
 uninstall:
 	@echo "REMOVE bin/sxiv"
@@ -84,4 +87,5 @@ uninstall:
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/sxiv.1
 	@echo "REMOVE share/sxiv/"
 	rm -rf $(DESTDIR)$(PREFIX)/share/sxiv
-
+	@echo "REMOVE /usr/share/applications/sxiv.dekstop
+	rm -rf ${DESTDIR}${SHAREPREFIX}/sxiv.desktop
