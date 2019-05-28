@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-=======
 config.h
 version.h
->>>>>>> 6511d681ac5e5306d9afc0e7b3a60d21a9614664
 *.d
 *.o
-version.h
 sxiv
