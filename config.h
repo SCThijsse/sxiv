@@ -14,11 +14,11 @@ static const char * const BAR_FONT = "RobotoMono:pixelsize=14;antialias=true;aut
 /* colors:
  * (see X(7) section "COLOR NAMES" for valid values)
  */
-static const char * const WIN_BG_COLOR = "#141516";
-static const char * const WIN_FS_COLOR = "#141516";
-static const char * const SEL_COLOR    = "#ecf0f1";
-static const char * const BAR_BG_COLOR = "#22a7f0";
-static const char * const BAR_FG_COLOR = "#ecf0f1";
+static const char * const WIN_BG_COLOR = "#191724";
+static const char * const WIN_FS_COLOR = "#191724";
+static const char * const SEL_COLOR    = "#e0def4";
+static const char * const BAR_BG_COLOR = "#eb6f92";
+static const char * const BAR_FG_COLOR = "#e0def4";
 
 #endif
 #ifdef _IMAGE_CONFIG
